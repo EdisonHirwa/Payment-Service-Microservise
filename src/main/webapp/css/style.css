@@ -1,0 +1,112 @@
+/* ============================================
+   Payment Service — Custom CSS
+   Smart Campus University Management System
+   ============================================ */
+
+/* ── Hero Section ──────────────────────────── */
+.hero-section {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 50%, #084298 100%);
+    padding: 3rem 0;
+}
+
+/* ── Feature Cards ─────────────────────────── */
+.feature-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: none;
+    border-radius: 12px;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* ── Balance Card ──────────────────────────── */
+.balance-card {
+    background: linear-gradient(135deg, #198754, #157347);
+    color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.balance-card.pending {
+    background: linear-gradient(135deg, #ffc107, #e0a800);
+    color: #333;
+}
+
+.balance-card.partial {
+    background: linear-gradient(135deg, #fd7e14, #e06500);
+    color: white;
+}
+
+/* ── Receipt Card ──────────────────────────── */
+.receipt-card {
+    border: 2px dashed #dee2e6;
+    border-radius: 12px;
+    padding: 2rem;
+    background: #fafbfc;
+}
+
+.receipt-header {
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ── Status Badges ──────────────────────────  */
+.status-paid {
+    background-color: #198754;
+    color: white;
+}
+
+.status-partial {
+    background-color: #fd7e14;
+    color: white;
+}
+
+.status-pending {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* ── Tables ────────────────────────────────── */
+.table th {
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #495057;
+}
+
+/* ── Form ──────────────────────────────────── */
+.form-card {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* ── Footer ────────────────────────────────── */
+footer {
+    margin-top: auto;
+}
+
+/* ── Responsive ────────────────────────────── */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+}
